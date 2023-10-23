@@ -1,0 +1,274 @@
+:root {
+    --background-color-strong: #091018; 
+    --background-color: #0F1923;
+    --default-color: #F12C4C;
+    --default-font: #e2dbdb;
+}
+
+/* Content Styles */
+
+.contents > div {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contents > div.active {
+    opacity: 1;
+    display: flex;
+    transform: translateY(0);
+}
+
+/* Header Styles */
+
+header {
+    padding: 50px 200px;
+}
+
+header ul {
+    gap: 2rem;
+}
+
+header ul li {
+    cursor: pointer;
+}
+
+header ul li:hover {
+    color: var(--default-color);
+}
+
+/* Sobre Styles */
+
+.sobre {
+    padding: 50px 35px;
+}
+
+.infos-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.infos-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(37, 37, 50, 0.98);
+    padding: 7px;
+}
+
+.infos-avatar .circle-spin {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: 0.15rem solid rgba(37, 37, 50, 0.98);
+    border-bottom: 0.15rem solid rgba(37, 37, 50, 0.98);
+    border-left: 0.15rem solid var(--default-color);
+    border-right: 0.15rem solid var(--default-color);
+    animation: spin 9s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    33.33% {
+      transform: rotate(240deg);
+    }
+    66.66% {
+      transform: rotate(480deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+}
+
+/* Formação Styles */
+
+.formacao {
+    padding: 50px 35px;
+}
+
+/* Projeto Styles */
+
+.projeto {
+    padding: 50px 35px;
+}
+
+.projeto .content-img {
+    padding: 0.25rem;
+    border-radius: 1.5rem;
+    border: 0.12rem solid var(--default-color);
+}
+
+.projeto-img {
+    border-radius: 1.5rem;
+}
+
+.content-projeto {
+    padding: 2rem;
+    border: 1px solid #151f29;
+    border-radius: 2rem;
+}
+
+.arrow {
+    background-color: transparent;
+    color: var(--default-color);
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    padding: 0 2rem;
+    top: 50%;
+    bottom: 50%;
+}
+
+.a-left { 
+    left: 0;
+}
+
+.a-right { 
+    right: 0;
+}
+
+.buttons-project a {
+    border-radius: 0.15rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.buttons-project a:first-child {
+    background-color: var(--default-color);
+    color: var(--default-font);
+}
+
+.buttons-project a:first-child:hover {
+    background-color: var(--default-color);
+    color: var(--default-font);
+}
+
+.buttons-project a:last-child {
+    border: 1px solid var(--default-color);
+    background-color: transparent;
+    color: var(--default-color);
+}
+
+.buttons-project a:last-child:hover {
+    background-color: var(--default-color);
+    color: var(--default-font);
+}
+
+/* Contato Styles */
+
+.contato {
+    padding: 50px 35px;
+}
+
+.floating {
+    animation: floating 3s infinite;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { 
+        transform: translateY(0); 
+        font-size: 11.5px;
+    }
+    50% { 
+        transform: translateY(-17px); 
+        font-size: 12px;
+    }
+    100% { 
+        transform: translateY(0); 
+        font-size: 11.5px;
+    }
+}
+
+.shadow {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 50%;
+}
+
+form input, form textarea {
+    flex-grow: 1;
+    position: relative;
+    background: var(--background-color-strong);
+    border: 1px solid transparent;
+    box-shadow: none;
+    height: 48px;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: flex-start!important;
+    padding: 5px 16px;
+    display: flex;
+    color: #b6afaf;
+    outline: none;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border: 1px solid var(--default-color);
+}
+
+.contato button {
+    background-color: var(--default-color);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--default-font);
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+/* Bars Skils */
+
+.progressbar {
+    background-color: #b6b2b2;
+    height: 7px;
+    border-radius: 2px;
+}
+
+.skills-bars .progressbar .progress {
+    background-color: #F12C4C;
+    height: 7px;
+    border-radius: 2px;
+} 
+
+#progress-html {
+    width: 70%;
+}
+
+#progress-css {
+    width: 65%;
+}
+
+#progress-js {
+    width: 75%;
+}
+
+#progress-php {
+    width: 80%;
+}
+
+#progress-laravel {
+    width: 80%;
+}

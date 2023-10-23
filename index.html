@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Pessoal</title>
+  
+    <!-- Styles pages -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/9a785616dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <ul class="flex j-end menu-content">
+                <li onclick="showContent(this, 'sobre')">Sobre mim</li>
+                <li onclick="showContent(this, 'formacao')">Formação Educacional</li>
+                <li onclick="showContent(this, 'projeto')">Projetos</li>
+                <li onclick="showContent(this, 'contato')">Contato</li>
+            </ul>
+        </header>
+        <div class="container">
+
+            <section class="contents">
+
+                <!-- Sobre -->
+                <div class="sobre flex f-col a-center">
+
+                    <h1 class="title">Sobre</h1>
+
+                    <div class="flex g-4 py-4 f-col a-center">
+                        <div class="infos-avatar w-30">
+                            <img src="assets/img/avatar.jfif" class="w-70 h70" alt="">
+                            <span class="circle-spin"></span>
+                        </div>
+                        <div class="contet-text px-6 t-center">
+                            <p>
+                                Me chamo Thiago Meira, tenho 19 anos e sou estudante de Análise e Desenvolvimento de
+                                Sistemas, apaixonado por tecnologia e entusiasta da programação. Tenho experiência em
+                                desenvolvimento de projetos pessoais, tanto no front-end quanto no back-end, e tenho
+                                como
+                                objetivo me tornar um desenvolvedor full-stack web. Desde cedo, comecei a me interessar
+                                por
+                                programação e tenho aperfeiçoado minhas habilidades por meio de cursos e projetos
+                                pessoais.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Formação -->
+                <div class="formacao flex f-col a-center">
+
+                    <h1 class="title">Habilidades</h1>
+
+                    <div class="flex g-4 py-2 f-col a-center w-100">
+
+                        <div class="contet-text px-6 t-center w-100 flex g-4 a-center">
+                            <div class="w-70 t-start py-2 w-100 flex f-col g-2">
+                                <img src="assets/img/astronauta-pc2.svg" alt="">
+                                <p>
+                                    Atualmente, estou cursando Análise e Desenvolvimento de Sistemas, mergulhando no
+                                    mundo da tecnologia.
+                                    Sou fluente em português, minha língua nativa, e estou empenhado em aprender inglês
+                                    para me conectar globalmente.
+                                </p>
+                            </div>
+
+                            <ul class="skills-bars w-100">
+                                <li class="flex f-col g-1 py-1">
+                                    <div class="t-start">
+                                        <h4>html</h4>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress" id="progress-html"></div>
+                                    </div>
+                                </li>
+                                <li class="flex f-col g-1 py-1">
+                                    <div class="t-start">
+                                        <h4>CSS</h4>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress" id="progress-css"></div>
+                                    </div>
+                                </li>
+                                <li class="flex f-col g-1 py-1">
+                                    <div class="t-start">
+                                        <h4>Js</h4>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress" id="progress-js"></div>
+                                    </div>
+                                </li>
+                                <li class="flex f-col g-1 py-1">
+                                    <div class="t-start">
+                                        <h4>PHP</h4>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress" id="progress-php"></div>
+                                    </div>
+                                </li>
+                                <li class="flex f-col g-1 py-1">
+                                    <div class="t-start">
+                                        <h4>Laravel</h4>
+                                    </div>
+                                    <div class="progressbar">
+                                        <div class="progress" id="progress-laravel"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Projetos -->
+                <div class="projeto flex f-col a-center g-1">
+
+                    <h1 class="title">Projetos</h1>
+
+                    <div class="flex g-4 py-4 f-col a-center p-rlt content-projeto">
+                        <div class="content-img w-50">
+                            <img src="" class="projeto-img" width="100%" alt="">
+                        </div>
+                        <div class="contet-text px-6 t-center">
+                            <div class="flex g-4">
+                                <div class="flex f-col g-2 w-100">
+                                    <h1 class="title title-project"></h1>
+                                    <p class="description-project"></p> 
+                                    <div class="flex g-2 j-center buttons-project">
+                                        <a href="#" class="py-1 w-20 button-demo">Visitar o Site</a>
+                                        <a href="#" class="py-1 w-20 button-repos">Repositório</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons flex g-2">
+                            <button class="arrow a-left">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <button class="arrow a-right">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Habilidades -->
+                <div class="contato flex f-col a-center">
+
+                    <h1 class="title">Contato</h1>
+
+                    <div class="flex g-4 py-2 f-col a-center w-100">
+
+                        <div class="contet-text px-6 t-center w-100 flex g-4 a-center">
+                            <div class="w-100 t-start py-2 flex g-4">
+                                <div class="content-img w-50">
+                                    <img src="assets/img/astronauta-3.svg" class="floating" width="100%" alt="">
+                                    <div class="shadow"></div>
+                                </div>
+                                
+                                <form class="w-100">
+                                    <div class="flex f-col g-2">
+                                        <div class="input-group">
+                                            <input placeholder="Nome" type="text" class="w-100">
+                                        </div>
+                                        <div class="input-group">
+                                            <input placeholder="Telefone" type="text" class="w-100">
+                                        </div>
+                                        <div class="input-group">
+                                            <input placeholder="E-mail" type="email" class="w-100">
+                                        </div>
+                                        <div class="input-group">
+                                            <textarea name="" placeholder="Mensagem" id="" cols="30" rows="10" class="w-100"></textarea>
+                                        </div>
+                                    
+                                        <button class="w-100 py-1">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
